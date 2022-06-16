@@ -31,4 +31,4 @@ GCC的一大功能是可以針對不同平台交叉編譯程序。這意味著�
 
 GCC是在基於Unix的系統上編譯C和C ++程序的最常見選擇之一。如果您正在為Linux開發，那麼GCC是一個不錯的選擇。它也可以用於Windows，不過通常首選其他編譯器，例如Microsoft Visual Studio附帶的編譯器。
 
-[gcc指令集](https://omusico.pixnet.net/blog/post/25368607)
+
