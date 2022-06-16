@@ -352,15 +352,4 @@ void parse() {
 
 
 
-c4 程式碼只有短短500多行，但是他是編譯器的精華，而且裡面有用很多虛擬機的東西
-
-https://github.com/ccc-c/c4/wiki/vm
-
-rubi 立即編譯是使用機器碼先寫到記憶體裡，後面的程式碼就可以執行
-
-https://github.com/ccc-c/rubi/
-
-
-
-期中期末做上面兩個程式碼的解析也可以
 
