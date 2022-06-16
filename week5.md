@@ -1,5 +1,5 @@
-```
-c6 編譯器 是陳鍾誠修改自 c4 的衍生作品。
+## c6 編譯器 是陳鍾誠修改自 c4 的衍生作品。
+
 c4 是 Robert Swierczek 寫的一個小型 C 語言編譯器，全部 527 行的原始碼都在 c4.c 裏 。
 
 c4 編譯完成後，會產生一種《機器碼》放在記憶體內，然後 虛擬機 會立刻執行該機器碼。
@@ -12,18 +12,17 @@ c4 編譯完成後，會產生一種《機器碼》放在記憶體內，然後 �
 
 加入目的檔
 
-可以用 -o 儲存目的檔
-
-可以用 -u 印出與 -r 執行目的檔
+- 可以用 -o 儲存目的檔
+- 可以用 -u 印出與 -r 執行目的檔
 
 延伸虛擬機
 
-加入 WRIT 指令做檔案寫入
-
-將字串 ADDR 從 IMM 獨立區分出來 (才能用不同格式列印，也比較好懂)
+- 加入 WRIT 指令做檔案寫入
+- 將字串 ADDR 從 IMM 獨立區分出來 (才能用不同格式列印，也比較好懂)
 
 以下是 c6 編譯器的用法，可以進行《自我編譯》:
 
+```
 $ gcc c6.c -o c6
 
 $ ./c6 test/hello.c
@@ -34,8 +33,11 @@ $ ./c6 c6.c test/hello.c
 hello, world
 exit(0) cycle = 9    
 exit(0) cycle = 28793
+```
+
 c6 在 Windows / Linux / MAC 中都可以執行，使用的精簡過的 C 語言語法！
 
+```
 int main()映出整個主程式
 4: {
 5:   printf("hello, world\n");
@@ -63,8 +65,8 @@ LC  : load char          載入字元                              a = *(char *)
 SI  : store int          儲存整數                              *(int *)*sp++ = a;
 SC  : store char         儲存字元                              a = *(char *)*sp++ = a;
 PSH : push               推入堆疊                              *--sp = a;
-參考資料
-
-https://github.com/ccc-c/c6/wikixxxxxxxxxx quicksort([X|Xs],Ys) :-  partition(Xs,X,Left,Right),  quicksort(Left,Ls),  quicksort(Right,Rs),  append(Ls,[X|Rs],Ys).quicksort([],[]).partition([X|Xs],Y,[X|Ls],Rs) :-  X <= Y, partition(Xs,Y,Ls,Rs).partition([X|Xs],Y,Ls,[X|Rs]) :-  X > Y, partition(Xs,Y,Ls,Rs).partition([],Y,[],[]).append([],Ys,Ys).append([X|Xs],Ys,[X|Zs]) :- append(Xs,Ys,Zs).
 ```
 
+參考資料
+
+https://github.com/ccc-c/c6/wiki
