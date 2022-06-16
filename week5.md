@@ -1,3 +1,4 @@
+```
 c6 編譯器 是陳鍾誠修改自 c4 的衍生作品。
 c4 是 Robert Swierczek 寫的一個小型 C 語言編譯器，全部 527 行的原始碼都在 c4.c 裏 。
 
@@ -65,3 +66,5 @@ PSH : push               推入堆疊                              *--sp = a;
 參考資料
 
 https://github.com/ccc-c/c6/wikixxxxxxxxxx quicksort([X|Xs],Ys) :-  partition(Xs,X,Left,Right),  quicksort(Left,Ls),  quicksort(Right,Rs),  append(Ls,[X|Rs],Ys).quicksort([],[]).partition([X|Xs],Y,[X|Ls],Rs) :-  X <= Y, partition(Xs,Y,Ls,Rs).partition([X|Xs],Y,Ls,[X|Rs]) :-  X > Y, partition(Xs,Y,Ls,Rs).partition([],Y,[],[]).append([],Ys,Ys).append([X|Xs],Ys,[X|Zs]) :- append(Xs,Ys,Zs).
+```
+
